@@ -25,6 +25,10 @@ module.exports = {
         test: /\.modernizrrc\.js$/,
         exclude: /(node_modules)/,
         loader: "webpack-modernizr-loader"
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|eot|ttf|otf|woff|svg)$/,
+        loader: 'url-loader'
       }
     ]
   },
